@@ -100,8 +100,8 @@ NB: perché è importante che non sia lineare? Perché $f(x \oplus y) \neq f(x) 
 \subsection{Vulnerabilità}
 Siano:
 $$ c = C_{DES}(m, k) $$
-$$ c^{*} = C_{DES}(m', k') $$
-$$ m', k' \text{ complementari di m e k} $$
+$$ c^{*} = C_{DES}(\bar{m}, \bar{k}) $$
+$$ \bar{m}, \bar{k} \text{ complementari di m e k} $$
 
 Si può notare che $c^{*} = c$ perché SC sposta i bit complementati quindi EP espande bit complementati e poi c'è lo XOR che ci da un risultato uguale a quello che avremmo se non fossero complementate:
 $$ \bar{m_i} \oplus \bar{K_i} = (1 \oplus m_i) \oplus (1 \oplus K_i) = m_i \oplus K_i $$
