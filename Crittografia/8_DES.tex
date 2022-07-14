@@ -125,7 +125,7 @@ si possono dimezzare le chiavi passando a $2^{55}$ (55 bit di sicurezza). Questo
     \item C(m, k) = $\bar{c_2}$: $\bar{k}$ POTREBBE essere la chiave
     
     NB: $C(m,k) = \bar{c_2} \iff C(\bar{m},\bar{k}) = \bar{\bar{c_2}} = c_2$ in quanto sappiamo che $C(m, k) = c$ e $C(\bar{m}, \bar{k})=\bar{c}$. Escludo quindi due chiavi alla volta.
-    \item $\neq c_1, \bar{c_2}$: si prova un'altra chiave (k e $\bar{k}$ non lo sono)
+    \item C(m, k) $\neq c_1, \bar{c_2}$: si prova un'altra chiave (k e $\bar{k}$ non lo sono)
 \end{itemize}
 
 Nel 1990 sono stati scoperti attacchi di \emph{crittoanalisi differenziale} (da Bihan e Shamir). E' un attacco di tipo chosen plain-text in cui ci si procura $2^{47}$ coppie $<m,c>$.
